@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultaten</title>
+    <link rel="stylesheet" type="text/css" href="styles/style2.css">
+</head>
+
+<body>
+    <!--Begin header-->
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="verhalenwebsite.html">
+                        <img src="images/logo.svg" alt="letters van de eurostar"></a>
+                </li>
+                <li>
+                    <a href="profiel.html">
+                        <img src="images/profiel.svg" alt="profiel icoon">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--Eind header-->
+    <main>
+        <h2>Resultaten</h2>
+
+        <form action="zoekresultaat.html">
+
+
+            <fieldset>
+                <input id="bestbeoordeeld" type="checkbox" name="bestbeoordeeld">
+                <label for="bestbeoordeeld">Best beoordeeld</label>
+                <input id="populairst" type="checkbox" name="populairst">
+                <label for="populairst">Populairst</label>
+                <input id="aantalw" type="checkbox" name="aantalw">
+                <label for="aantalw">Aantal woorden</label>
+            </fieldset>
+            <fieldset>
+                <input id="kort" type="checkbox" name="kort">
+                <label for="kort">Kort</label>
+                <input id="lang" type="checkbox" name="lang">
+                <label for="lang">Lang</label>
+                <input id="rustig" type="checkbox" name="rustig">
+                <label for="rustig">Rustig</label>
+                <input id="druk" type="checkbox" name="druk">
+                <label for="druk">Druk</label>
+                <input id="normaal" type="checkbox" name="normaal">
+                <label for="normaal">Normaal</label>
+            </fieldset>
+
+            <input type="submit" value="Zoeken">
+            <a href="verhalenwebsite.html"> Doe een gok</a>
+
+        </form>
+
+
+        <!--Einde header-->
+        <!--Begin section-->
+        <section id="resultaten">
+            <article>
+                <a class="titel" href="overzichtspagina.html">Mop</a>
+                <span>hoihoihoi</span>
+                <button id="change_text_button">Toevoegen</button>
+            </article>
+            <article>
+                <a class="titel" href="overzichtspagina.html">Haiku</a>
+                <h3>Informatie</h3>
+                <button id="toevoegen">+</button>
+            </article>
+            <article>
+                <a class="titel" href="overzichtspagina.html">Lepra</a>
+
+            </article>
+            <article>
+                <a class="titel" href="overzichtspagina.html">Hongerwinter</a>
+
+            </article>
+            <article>
+                <a class="titel" href="overzichtspagina.html">De Cock</a>
+
+            </article>
+
+
+        </section>
+    </main>
+    <!--Einde section-->
+    <!--Begin footer-->
+    <footer>
+
+    </footer>
+    <!--Einde footer-->
+    <script src="js/verhalen.js">
+    </script>
+</body>
+</html>
