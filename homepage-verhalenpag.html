@@ -8,14 +8,14 @@
     <link rel="stylesheet" type="text/css" href="styles/style2.css">
 </head>
 
-<body>
+<body id="home">
     <!--Begin header-->
     <header>
         <nav>
             <ul>
                 <li>
                     <a href="verhalenwebsite.html">
-                        <img src="images/logo.svg" alt="letters van de eurostar"></a>
+                        <img src="images/logo.svg" alt="letters van eurostar"></a>
                 </li>
                 <li>
                     <a href="profiel.html">
@@ -31,8 +31,11 @@
         </article>
         <!--Bron: https://www.w3schools.com/howto/howto_css_image_text.asp-->
         <!--Begin fieldset-->
+        <div class="loader"></div>
+
     </header>
     <!--Eind header-->
+    <!--Begin main-->
     <main>
         <ul>
             <li>
@@ -44,10 +47,9 @@
             <li>
                 <button data-id="Info">Info</button>
             </li>
-
         </ul>
 
-        <form action="zoekresultaat.html">
+        <form id="searchform" action="overzichtspagina.html">
             <p> Kies 1 of meer van de opties en ga verder</p>
             <div>
                 <fieldset>
@@ -73,13 +75,13 @@
                     <label for="normaal">Normaal</label>
                 </fieldset>
             </div>
-            <input type="submit" value="Zoeken">
-            <a href="verhalenwebsite.html"> Doe een gok</a>
+            <input class="search" type="submit" value="Zoeken">
+            <a href="overzichtspagina.html"> Doe een gok</a>
 
         </form>
-
     </main>
-
+     <!--Eind main-->
+      <!--Begin section-->
     <section class="overzicht">
         <h2>Verhalen</h2>
         <div class="verder">
@@ -88,18 +90,19 @@
                     <h3>
                         Verder lezen
                     </h3>
+                    <img src="images/mopdonker.svg" alt="mop verhaal">
+                    <img src="images/progressbar.svg" alt="progressbar">
                 </article>
             </a>
-
         </div>
         <div class="aanbev">
-            <a href="verhalenwebsite.html">
+            <a href="homepage-verhalenpag.html">
                 <article>
                     <h3>Verhaal vdd</h3>
 
                 </article>
             </a>
-            <a href="zoekresultaat.html">
+            <a href="homepage-verhalenpag.html">
                 <!-- In deze link zit een afbeelding: zie css-->
                 <article>
                     <h3>Aanbevolven</h3>
@@ -108,20 +111,19 @@
             </a>
         </div>
         <div class="vormg">
-            <a href="zoekresultaat.html">
+            <a href="homepage-verhalenpag.html">
                 <article>
-
                     <h3>Rustig</h3>
                     <p>Dit zijn verhalen die rustig zijn vormgegeven</p>
                 </article>
             </a>
-            <a href="zoekresultaat.html">
+            <a href="homepage-verhalenpag.html">
                 <article>
                     <h3>Druk</h3>
                     <p>Dit zijn verhalen die rustig zijn vormgegeven</p>
                 </article>
             </a>
-            <a href="zoekresultaat.html">
+            <a href="homepage-verhalenpag.html">
                 <article>
                     <h3>Normaal</h3>
                     <p>Dit zijn verhalen die rustig zijn vormgegeven</p>
@@ -129,12 +131,13 @@
             </a>
         </div>
     </section>
-
+    <!--Eind section-->
     <!--Begin footer-->
     <footer>
-    <p>®Gemaakt door Stella Niewenhuis</p>
+        <p>® Gemaakt door Stella Niewenhuis</p>
     </footer>
     <!--Einde footer-->
+    <!--JS koppeling-->
     <script src="js/verhalen.js"></script>
 </body>
 
